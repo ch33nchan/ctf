@@ -1,0 +1,16 @@
+flag{0a2b2800}
+
+Solution:
+Found four "driving" branches in commaai/openpilot repository:
+- cgwm-driving: commit 94dd3bd91, UUID 8e4740e6-ca79-4cf7-9ef8-206c002a9393/100
+- gwm-driving: commit f2413040a, UUID b67ea5e9-92ce-49c1-9479-dcc5525748f7/100
+- neurips-driving: commit fac1a93d0, UUID 909636e2-a834-4f6d-8fcf-a0cbfd0e6b72/400
+- nid-driving: commit 13e79e9fa, UUID a284fbed-6b16-48d5-b4ca-0f14705d788f/400
+
+Each branch modified ONNX model files (driving_policy.onnx and/or driving_vision.onnx).
+The second flag was the UUID prefix from neurips-driving (909636e2).
+
+To "combine information from all branches", I XORed the UUID prefixes:
+8e4740e6 XOR b67ea5e9 XOR 909636e2 XOR a284fbed = 0a2b2800
+
+Third flag: flag{0a2b2800}
