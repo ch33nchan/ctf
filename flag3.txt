@@ -1,4 +1,4 @@
-flag{0a2b2800}
+flag{b3a39a41}
 
 Solution:
 Found four "driving" branches in commaai/openpilot repository:
@@ -7,10 +7,7 @@ Found four "driving" branches in commaai/openpilot repository:
 - neurips-driving: commit fac1a93d0, UUID 909636e2-a834-4f6d-8fcf-a0cbfd0e6b72/400
 - nid-driving: commit 13e79e9fa, UUID a284fbed-6b16-48d5-b4ca-0f14705d788f/400
 
-Each branch modified ONNX model files (driving_policy.onnx and/or driving_vision.onnx).
-The second flag was the UUID prefix from neurips-driving (909636e2).
+Each branch modified the driving_policy.onnx file. After installing git-lfs and downloading the actual ONNX file from the neurips-driving branch, found the flag embedded in the file using strings:
 
-To "combine information from all branches", I XORed the UUID prefixes:
-8e4740e6 XOR b67ea5e9 XOR 909636e2 XOR a284fbed = 0a2b2800
-
-Third flag: flag{0a2b2800}
+congratulations for finding the third flag{b3a39a41}
+for the next flag: go to hf/datasets/commaai/comma2k19
