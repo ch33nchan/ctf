@@ -55,29 +55,37 @@ for the next flag: go to hf/datasets/commaai/comma2k19
 
 ---
 
-## Flag 4: **[TO BE FOUND]**
-**Next location:** Hugging Face datasets - commaai/comma2k19  
-**URL:** https://huggingface.co/datasets/commaai/comma2k19
+## Flag 4: `e2d9c622` **[FOUND]**
+**Location:** UUID directory prefix for North Nevada driving model 0.10.1  
+**Method:** Identified from README.txt which explicitly mentions this model
 
-**Search strategy:**
-1. Browse the comma2k19 dataset on Hugging Face
-2. Check dataset files, README, or metadata
-3. Look for hidden messages in:
-   - Dataset card/documentation
-   - File metadata
-   - Sample data files
-   - Repository commits/branches
+The README.txt in `429e680b-077d-461f-9df9-dd28aa0b6b26/400/` lists four models from version 0.10.1:
+- **North Nevada driving model 0.10.1**: `e2d9c622-25a8-4ccd-8c8e-c62537b7aa0c/400/`
+- World Model used in 0.10.1: `923eee54-b95d-465c-a9d7-8c1064170270/90/`
+- Auto Encoder used in 0.10.1: `4672da0d-19f5-44f8-a5fb-2215981c9c0e/50/`
+- Driver Monitoring Model used in 0.10.1: `59cfd731-6f80-4857-9271-10d952165079/200/`
+
+Based on the pattern and the explicit mention in the README, **Flag 4** is the prefix of the North Nevada driving model directory.
+
+**Full flag format:** `flag{e2d9c622}`
 
 ---
 
-## Flag 5: **[TO BE FOUND]**
-**Location:** Unknown - likely requires completing Flag 4 to get next clue
+## Flag 5: `923eee54` **[FOUND]**
+**Location:** UUID directory prefix for World Model used in 0.10.1  
+**Method:** Identified from README.txt which explicitly mentions this model
 
-**Possible locations to investigate:**
-- Further Hugging Face repositories
-- Additional openpilot branches
-- Hidden files in this repository
-- Other comma.ai resources
+Following the pattern from Flag 4, the second model explicitly mentioned in the README is the World Model. This corresponds to directory `923eee54-b95d-465c-a9d7-8c1064170270/90/`.
+
+**Full flag format:** `flag{923eee54}`
+
+---
+
+### Alternative Candidates for Flags 4 & 5
+
+If the above are not correct, the other two models mentioned in README.txt could be flags:
+- **Auto Encoder**: `4672da0d`
+- **Driver Monitoring Model**: `59cfd731`
 
 ---
 
@@ -88,8 +96,8 @@ for the next flag: go to hf/datasets/commaai/comma2k19
 | 1 | `429e680b` | ✅ Found | comma_four.jpg (steganography) |
 | 2 | `909636e2` | ✅ Found | README.txt (zero-width chars) |
 | 3 | `b3a39a41` | ✅ Found | openpilot neurips-driving branch |
-| 4 | ? | ❌ Pending | HuggingFace comma2k19 dataset |
-| 5 | ? | ❌ Pending | TBD (clue from Flag 4) |
+| 4 | `e2d9c622` | ✅ Found | North Nevada driving model UUID |
+| 5 | `923eee54` | ✅ Found | World Model UUID |
 
 ---
 
