@@ -55,37 +55,26 @@ for the next flag: go to hf/datasets/commaai/comma2k19
 
 ---
 
-## Flag 4: `e2d9c622` **[FOUND]**
-**Location:** UUID directory prefix for North Nevada driving model 0.10.1  
-**Method:** Identified from README.txt which explicitly mentions this model
+## Flag 4: **[PENDING - External Resource Required]**
+**Location:** HuggingFace dataset - commaai/comma2k19  
+**URL:** https://huggingface.co/datasets/commaai/comma2k19
 
-The README.txt in `429e680b-077d-461f-9df9-dd28aa0b6b26/400/` lists four models from version 0.10.1:
-- **North Nevada driving model 0.10.1**: `e2d9c622-25a8-4ccd-8c8e-c62537b7aa0c/400/`
-- World Model used in 0.10.1: `923eee54-b95d-465c-a9d7-8c1064170270/90/`
-- Auto Encoder used in 0.10.1: `4672da0d-19f5-44f8-a5fb-2215981c9c0e/50/`
-- Driver Monitoring Model used in 0.10.1: `59cfd731-6f80-4857-9271-10d952165079/200/`
+**Status:** Cannot be accessed from this environment due to network restrictions. 
 
-Based on the pattern and the explicit mention in the README, **Flag 4** is the prefix of the North Nevada driving model directory.
+**Instructions for finding Flag 4:**
+1. Visit https://huggingface.co/datasets/commaai/comma2k19
+2. Check dataset files, README, metadata, or documentation
+3. Look for hidden messages with format "congratulations for finding the fourth flag{...}"
+4. The flag should contain the next clue for Flag 5
 
-**Full flag format:** `flag{e2d9c622}`
-
----
-
-## Flag 5: `923eee54` **[FOUND]**
-**Location:** UUID directory prefix for World Model used in 0.10.1  
-**Method:** Identified from README.txt which explicitly mentions this model
-
-Following the pattern from Flag 4, the second model explicitly mentioned in the README is the World Model. This corresponds to directory `923eee54-b95d-465c-a9d7-8c1064170270/90/`.
-
-**Full flag format:** `flag{923eee54}`
+**Note:** Flag 3's message explicitly directs to this location: "for the next flag: go to hf/datasets/commaai/comma2k19"
 
 ---
 
-### Alternative Candidates for Flags 4 & 5
+## Flag 5: **[PENDING - Revealed by Flag 4]**
+**Location:** Will be revealed after finding Flag 4
 
-If the above are not correct, the other two models mentioned in README.txt could be flags:
-- **Auto Encoder**: `4672da0d`
-- **Driver Monitoring Model**: `59cfd731`
+Following the pattern established by previous flags, Flag 4 should contain explicit instructions directing to the location of Flag 5.
 
 ---
 
@@ -96,8 +85,8 @@ If the above are not correct, the other two models mentioned in README.txt could
 | 1 | `429e680b` | ✅ Found | comma_four.jpg (steganography) |
 | 2 | `909636e2` | ✅ Found | README.txt (zero-width chars) |
 | 3 | `b3a39a41` | ✅ Found | openpilot neurips-driving branch |
-| 4 | `e2d9c622` | ✅ Found | North Nevada driving model UUID |
-| 5 | `923eee54` | ✅ Found | World Model UUID |
+| 4 | ? | ⏳ Pending | HuggingFace comma2k19 dataset |
+| 5 | ? | ⏳ Pending | Location revealed by Flag 4 |
 
 ---
 
